@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reigning Well: The Reforms of Judah's Kings — Emi Lokan</title>
+<meta name="description" content="The reforms of Judah's righteous kings, read against the Deuteronomic law of the king and applied to the inner world (the kingdom of God, entos hymōn) and the outer world (the kingdom of heaven), by Emi Lokan.">
+<style>
+  :root {
+    --ink: #1c1a17; --ink-soft: #4a453e; --paper: #faf7f2; --paper-raised: #ffffff;
+    --accent: #7a2e2e; --rule: #ddd3c4; --toc-bg: #f1ece2;
+    --inner: #4b3f75; --outer: #8a6a1f; --kept: #3d6247; --kept-bg: #e8efe6; --warn-bg: #f5e7e4;
+    --serif: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio', P052, serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #ece7de; --ink-soft: #bdb6a9; --paper: #17150f; --paper-raised: #201c15;
+      --accent: #e0a458; --rule: #3a352a; --toc-bg: #1e1a13;
+      --inner: #b8a9ee; --outer: #d4b46a; --kept: #9cc5a5; --kept-bg: #1b241b; --warn-bg: #2a1d17;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #ece7de; --ink-soft: #bdb6a9; --paper: #17150f; --paper-raised: #201c15;
+    --accent: #e0a458; --rule: #3a352a; --toc-bg: #1e1a13;
+    --inner: #b8a9ee; --outer: #d4b46a; --kept: #9cc5a5; --kept-bg: #1b241b; --warn-bg: #2a1d17;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); scroll-behavior: smooth; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--serif); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  a { color: var(--accent); }
+  h1, h2, h3 { line-height: 1.2; margin: 0; }
+
+  header.hero { padding: 72px 0 40px; text-align: center; border-bottom: 1px solid var(--rule); margin-bottom: 40px; }
+  .kicker { font-family: var(--sans); letter-spacing: 0.18em; text-transform: uppercase; font-size: 12px; color: var(--accent); margin: 0 0 18px; }
+  h1.title { font-size: clamp(2.4rem, 6vw, 3.4rem); margin: 0 0 6px; letter-spacing: 0.02em; }
+  .subtitle { font-style: italic; color: var(--ink-soft); font-size: 1.15rem; margin: 0 0 22px; }
+  .byline { font-family: var(--sans); font-size: 13px; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.1em; margin: 0; }
+  .lede { text-align: left; margin: 0 0 8px; }
+  .lede p { font-size: 1.08rem; margin: 0 0 1.15em; }
+  .epigraph { margin: 1.6em 0 40px; padding: 0.2em 0 0.2em 1.2em; border-left: 3px solid var(--accent); font-size: 1.15rem; font-style: italic; }
+  .epigraph cite, blockquote cite { display: block; font-style: normal; font-family: var(--sans); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); margin-top: 0.5em; }
+
+  nav.toc { background: var(--toc-bg); border: 1px solid var(--rule); border-radius: 10px; padding: 22px 26px 26px; margin: 0 0 24px; }
+  nav.toc h2 { font-family: var(--sans); font-size: 13px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-soft); margin: 0 0 14px; }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 8px; }
+  nav.toc a { color: var(--ink); text-decoration: none; font-size: 0.95rem; }
+  nav.toc a:hover { color: var(--accent); text-decoration: underline; }
+  nav.toc .num { display: inline-block; min-width: 2.4rem; }
+  nav.toc .group { font-family: var(--sans); font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-soft); margin: 14px 0 8px; }
+  nav.toc .group:first-child { margin-top: 0; }
+
+  section { padding: 0; scroll-margin-top: 24px; }
+  section > .wrap { border-top: 1px solid var(--rule); padding-top: 0.4em; margin-top: 3em; }
+  .secnum { display: block; font-family: var(--sans); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin: 1em 0 0.3em; }
+  section h2 { font-size: 1.7rem; margin: 0 0 0.2em; }
+  .tagline { font-style: italic; color: var(--ink-soft); font-size: 1.1rem; margin: 0 0 0.2em; }
+  .refs { font-family: var(--sans); font-size: 13px; color: var(--ink-soft); margin: 0 0 1.4em; }
+  section h3 { font-size: 1.2rem; margin: 2em 0 0.5em; color: var(--accent); }
+  p { margin: 0 0 1.15em; font-size: 1.08rem; }
+  blockquote { margin: 1.6em 0; padding: 0.2em 0 0.2em 1.2em; border-left: 3px solid var(--accent); font-size: 1.12rem; font-style: italic; }
+
+  .realms { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 1.6em 0; }
+  .realm { background: var(--paper-raised); border: 1px solid var(--rule); border-top: 3px solid var(--inner); border-radius: 8px; padding: 18px 20px; }
+  .realm.outer { border-top-color: var(--outer); }
+  .realm h3 { margin: 0 0 2px; color: var(--inner); }
+  .realm.outer h3 { color: var(--outer); }
+  .realm .greek { font-style: italic; color: var(--ink-soft); margin-bottom: 10px; }
+  .realm ul { margin: 0; padding-left: 1.1em; font-size: 0.98rem; }
+  .realm li { margin: 6px 0; }
+  .crosslink { font-family: var(--sans); font-size: 13px; letter-spacing: 0.04em; }
+
+  table { width: 100%; border-collapse: collapse; margin: 1.6em 0 2em; font-size: 0.92rem; font-family: var(--sans); line-height: 1.55; }
+  th, td { border: 1px solid var(--rule); padding: 10px 12px; text-align: left; vertical-align: top; }
+  th { background: var(--toc-bg); font-weight: 600; }
+  th small { display: block; font-weight: 400; font-style: italic; color: var(--ink-soft); font-family: var(--serif); }
+  th.th-inner { color: var(--inner); } th.th-outer { color: var(--outer); }
+  tr:nth-child(even) td { background: color-mix(in srgb, var(--toc-bg) 40%, var(--paper)); }
+  td.ref { font-weight: 600; color: var(--accent); width: 7.5rem; }
+
+  .warning { margin: 1.8em 0 1em; border: 1px solid var(--accent); border-radius: 8px; overflow: hidden; background: var(--warn-bg); }
+  .warning > .label { display: block; padding: 9px 14px; font-family: var(--sans); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: var(--accent); border-bottom: 1px solid var(--accent); }
+  .warning table { margin: 0; }
+  .warning th, .warning td { border-left: none; border-right: none; background: transparent !important; }
+  .warning tr:last-child td { border-bottom: none; }
+
+  .ledger-title { font-family: var(--sans); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft); margin: 2em 0 10px; }
+  .ledger { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0 0 1em; }
+  .ledger div { padding: 14px 16px; border-radius: 8px; font-size: 0.98rem; line-height: 1.6; }
+  .ledger .kept { background: var(--kept-bg); border-left: 3px solid var(--kept); }
+  .ledger .breached { background: var(--warn-bg); border-left: 3px solid var(--accent); }
+  .ledger .lbl { display: block; font-family: var(--sans); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; margin-bottom: 4px; }
+  .ledger .kept .lbl { color: var(--kept); } .ledger .breached .lbl { color: var(--accent); }
+
+  .note { border-left: 3px solid var(--rule); padding: 0.2em 0 0.2em 1em; color: var(--ink-soft); font-style: italic; margin: 1.4em 0 0; }
+  .note strong { font-style: normal; color: var(--ink); }
+  .deutero { margin: 1.4em 0 0; padding: 14px 18px; background: var(--paper-raised); border: 1px dashed var(--rule); border-radius: 8px; }
+  .deutero .lbl { display: block; font-family: var(--sans); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: var(--inner); margin-bottom: 4px; }
+  .deutero p { margin: 0; font-size: 1rem; }
+
+  ol.charter { list-style: none; counter-reset: c; padding: 0; margin: 1.4em 0; }
+  ol.charter > li { counter-increment: c; display: grid; grid-template-columns: 2.4rem 1fr; column-gap: 0.8rem; padding: 1.1em 0; border-top: 1px solid var(--rule); }
+  ol.charter > li::before { content: counter(c, upper-roman); grid-row: 1 / span 3; color: var(--accent); font-size: 1.3rem; line-height: 1.2; }
+  ol.charter h3 { margin: 0; font-size: 1.12rem; color: var(--ink); }
+  ol.charter .verse { font-style: italic; margin: 0.3em 0 0.6em; font-size: 1rem; }
+  ol.charter .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; font-size: 0.95rem; line-height: 1.55; }
+  ol.charter .pair b { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; }
+  ol.charter .pair .i b { color: var(--inner); } ol.charter .pair .o b { color: var(--outer); }
+  ol.charter h3, ol.charter .verse, ol.charter .pair { grid-column: 2; }
+
+  footer { margin-top: 3em; padding: 2em 0 96px; border-top: 1px solid var(--rule); text-align: center; color: var(--ink-soft); font-size: 0.92rem; }
+  footer p { font-size: 0.92rem; }
+  .back-to-top { display: inline-block; margin-top: 24px; font-family: var(--sans); font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-soft); text-decoration: none; }
+  .back-to-top:hover { color: var(--accent); }
+
+  @media (max-width: 600px) {
+    header.hero { padding: 48px 0 28px; }
+    nav.toc { padding: 18px 18px 20px; }
+    .realms, .ledger, ol.charter .pair { grid-template-columns: 1fr; }
+    table.map, table.map thead, table.map tbody, table.map th, table.map td, table.map tr { display: block; }
+    table.map th { display: none; }
+    table.map { border: none; }
+    table.map tr { border: 1px solid var(--rule); margin-bottom: 14px; border-radius: 6px; overflow: hidden; }
+    .warning table.map tr { border: none; margin: 0; }
+    table.map td { border: none; border-bottom: 1px solid var(--rule); width: auto; }
+    table.map td:last-child { border-bottom: none; }
+    table.map td::before { content: attr(data-label); display: block; font-family: var(--sans); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin-bottom: 4px; }
+    table.map td.ref::before { display: none; }
+    table.map td.in::before { color: var(--inner); } table.map td.out::before { color: var(--outer); }
+    table.measure td:last-child { white-space: nowrap; }
+  }
+</style>
+</head>
+<body id="top">
+
+<div class="wrap">
+  <header class="hero">
+    <p class="kicker">Emi Lokan &middot; Structural Theology</p>
+    <h1 class="title">Reigning Well</h1>
+    <p class="subtitle">The Reforms of Judah's Righteous Kings — Applied to Inner World and Outer World</p>
+    <p class="byline">By Emi Lokan</p>
+  </header>
+  <div class="lede">
+    <p>This study maps the reforming actions of Judah's faithful kings to both the inner life of the believer and their outward kingdom responsibilities. Each king is read against the charter Moses gave for Israel's kings in Deuteronomy 17, and against the plumb line the biblical historians used to measure them. Kings who later erred are included in full — their failures form part of the teaching.</p>
+    <p>Every external reform has a corresponding internal confrontation. Every internal transformation should produce visible external fruit. None of this is a programme of self-improvement: the reforms are the fruit of a reign received, not the means of establishing it.</p>
+  </div>
+  <blockquote class="epigraph">“The king's heart is a stream of water in the hand of the LORD; He turns it wherever He will.”<cite>Proverbs 21:1</cite></blockquote>
+</div>
+
+<div class="wrap">
+<nav class="toc" aria-label="Contents">
+  <div>
+    <h2>Contents</h2>
+    <ol>
+      <li class="group">The Framework</li>
+      <li><a href="#jurisdictions"><span class="num">I.</span>Two Jurisdictions: Inner World and Outer World</a></li>
+      <li><a href="#measure"><span class="num">II.</span>The Measure: “As David His Father”</a></li>
+      <li><a href="#charter"><span class="num">III.</span>The Charter: The Law of the King</a></li>
+      <li class="group">The Kings</li>
+      <li><a href="#asa"><span class="num">IV.</span>Asa</a></li>
+      <li><a href="#jehoshaphat"><span class="num">V.</span>Jehoshaphat</a></li>
+      <li><a href="#joash"><span class="num">VI.</span>Joash (Jehoash)</a></li>
+      <li><a href="#amaziah"><span class="num">VII.</span>Amaziah</a></li>
+      <li><a href="#uzziah"><span class="num">VIII.</span>Uzziah (Azariah)</a></li>
+      <li><a href="#jotham"><span class="num">IX.</span>Jotham</a></li>
+      <li><a href="#hezekiah"><span class="num">X.</span>Hezekiah</a></li>
+      <li><a href="#josiah"><span class="num">XI.</span>Josiah</a></li>
+      <li class="group">Conclusion</li>
+      <li><a href="#limits"><span class="num">XII.</span>The Limits of the Reformer</a></li>
+      <li><a href="#principle"><span class="num">XIII.</span>The Governing Principle</a></li>
+    </ol>
+  </div>
+</nav>
+</div>
+
+<main>
+
+<!-- I -->
+<section id="jurisdictions">
+  <div class="wrap">
+    <span class="secnum">I</span>
+    <h2>Two Jurisdictions</h2>
+    <p class="tagline">Inner World and Outer World</p>
+    <div class="prose">
+      <p>Throughout this study, <em>inner world</em> and <em>outer world</em> are not loose metaphors for “private” and “public”. They follow the distinction drawn in Scofield's dispensational reading of the Gospels between the <strong>kingdom of God</strong> and the <strong>kingdom of heaven</strong> — the same interior jurisdiction that the <a href="bleach-ontological-mapping.html">Bleach ontological mapping</a> locates in Ichigo's Inner World.</p>
+    </div>
+    <div class="realms">
+      <div class="realm">
+        <h3>Inner World</h3>
+        <div class="greek">The kingdom of God — <span lang="grc">ἐντὸς ὑμῶν</span>, entos hymōn</div>
+        <ul>
+          <li>“The kingdom of God cometh not with observation … behold, the kingdom of God is within you” (Luke 17:20–21).</li>
+          <li>In Scofield's terms, “inward and spiritual” (Rom 14:17), entered only by the new birth (John 3:3–5).</li>
+          <li>The hidden throne: who actually reigns over the heart, the will, the appetites and the imagination.</li>
+        </ul>
+      </div>
+      <div class="realm outer">
+        <h3>Outer World</h3>
+        <div class="greek">The kingdom of heaven — its tangible manifestation</div>
+        <ul>
+          <li>In Scofield's terms, “Messianic, mediatorial, and Davidic”, with the object of establishing the kingdom of God in the earth (note on Matt 6:33).</li>
+          <li>The visible sphere: households, congregations, institutions, cultures and nations.</li>
+          <li>Judah's throne was itself “the kingdom of the LORD in the hand of the sons of David” (2 Chron 13:8) — the outer kingdom in its Old Testament form.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="prose">
+      <p>The kings of Judah sat on the outer throne. But Scripture never assesses them by the outer throne alone. Every verdict — “his heart was perfect”, “his heart was lifted up” — is a verdict on the inner one. That is why each reform below is read twice: once for what it confronts within, and once for what it makes visible without.</p>
+      <p>The Bleach mapping names the danger plainly: the inner Hollow does not need to destroy Ichigo, only to take the throne of his inner world. The kings below show the same war fought on Judah's ground.</p>
+      <a class="crosslink" href="bleach-ontological-mapping.html#c-the-throne-of-the-inner-world">See also: Bleach — Ontological Mapping, XI.C, The Throne of the Inner World →</a>
+    </div>
+  </div>
+</section>
+
+<!-- II -->
+<section id="measure">
+  <div class="wrap">
+    <span class="secnum">II</span>
+    <h2>The Measure</h2>
+    <p class="tagline">“As David his father”</p>
+    <div class="prose">
+      <p>David is not studied as one of the kings here. He appears because the historians of Kings and Chronicles used him as the plumb line against which every son of his line was measured. They were not holding up his household, his wars or his achievements for imitation. They meant one thing by the comparison: <em>a heart wholly true to the LORD</em> (1 Kgs 15:3).</p>
+      <p>The record refuses to idealise even the measure. It qualifies David's uprightness in the same breath — “save only in the matter of Uriah the Hittite” (1 Kgs 15:5). The plumb line is the covenant loyalty, not the man. And the measure itself points past David to the Son of David, to whom “the Lord God shall give … the throne of his father David” (Luke 1:32–33).</p>
+    </div>
+    <table class="measure">
+      <thead><tr><th>King</th><th>The historian's verdict</th><th>Reference</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Asa</strong></td><td>“did that which was right in the eyes of the LORD, as did David his father”</td><td>1 Kgs 15:11</td></tr>
+        <tr><td><strong>Jehoshaphat</strong></td><td>“walked in the first ways of his father David”</td><td>2 Chron 17:3</td></tr>
+        <tr><td><strong>Joash</strong></td><td>did right “all his days wherein Jehoiada the priest instructed him” — measured by his mentor, not by David</td><td>2 Kgs 12:2</td></tr>
+        <tr><td><strong>Amaziah</strong></td><td>did right, “yet not like David his father”</td><td>2 Kgs 14:3</td></tr>
+        <tr><td><strong>Uzziah</strong></td><td>did right “according to all that his father Amaziah had done”</td><td>2 Kgs 15:3</td></tr>
+        <tr><td><strong>Jotham</strong></td><td>did right according to all that his father Uzziah did, “howbeit he entered not into the temple”</td><td>2 Chron 27:2</td></tr>
+        <tr><td><strong>Hezekiah</strong></td><td>did right “according to all that David his father did”</td><td>2 Kgs 18:3</td></tr>
+        <tr><td><strong>Josiah</strong></td><td>“walked in all the way of David his father, and turned not aside to the right hand or to the left”</td><td>2 Kgs 22:2</td></tr>
+      </tbody>
+    </table>
+    <p>Only three kings are measured against David without qualification: Asa, Hezekiah and Josiah. The wording of Josiah's verdict — <em>turned not aside to the right hand or to the left</em> — is lifted directly from the law of the king. That law is the charter the measure was always pointing back to.</p>
+  </div>
+</section>
+
+<!-- III -->
+<section id="charter">
+  <div class="wrap">
+    <span class="secnum">III</span>
+    <h2>The Charter</h2>
+    <p class="tagline">The Law of the King — Deuteronomy 17:14–20</p>
+    <div class="prose">
+      <p>Before Israel had a king, Moses wrote down what a king must and must not be. It is the only passage in the Torah addressed to the throne directly, and its precepts are the standard behind every verdict in Kings and Chronicles. Each one governs both jurisdictions.</p>
+    </div>
+    <ol class="charter">
+      <li>
+        <h3>Chosen by the LORD, from among his brethren</h3>
+        <p class="verse">“Thou shalt in any wise set him king over thee, whom the LORD thy God shall choose: one from among thy brethren.” — 17:15</p>
+        <div class="pair"><div class="i"><b>Inner world</b><br>Authority is received, not seized. The heart's throne belongs to the One who appoints.</div><div class="o"><b>Outer world</b><br>Leaders who stay among the people they serve, not above or apart from them.</div></div>
+      </li>
+      <li>
+        <h3>Not multiply horses, nor return to Egypt</h3>
+        <p class="verse">“He shall not multiply horses to himself, nor cause the people to return to Egypt.” — 17:16</p>
+        <div class="pair"><div class="i"><b>Inner world</b><br>Refusing to make strength, strategy or self-sufficiency the true object of trust.</div><div class="o"><b>Outer world</b><br>Not buying security through alliances with the powers God delivered you from.</div></div>
+      </li>
+      <li>
+        <h3>Not multiply wives, lest his heart turn away</h3>
+        <p class="verse">“Neither shall he multiply wives to himself, that his heart turn not away.” — 17:17</p>
+        <div class="pair"><div class="i"><b>Inner world</b><br>Guarding covenant faithfulness and an undivided heart; appetite is not allowed to legislate.</div><div class="o"><b>Outer world</b><br>Refusing the political marriages and partnerships that import other gods into the house.</div></div>
+      </li>
+      <li>
+        <h3>Not greatly multiply silver and gold</h3>
+        <p class="verse">“Neither shall he greatly multiply to himself silver and gold.” — 17:17</p>
+        <div class="pair"><div class="i"><b>Inner world</b><br>Treasure held loosely; wealth never becomes identity or proof of favour.</div><div class="o"><b>Outer world</b><br>Stewardship over accumulation; resources serve the people, not the image of the ruler.</div></div>
+      </li>
+      <li>
+        <h3>Write a copy of the law in a book</h3>
+        <p class="verse">“He shall write him a copy of this law in a book out of that which is before the priests the Levites.” — 17:18</p>
+        <div class="pair"><div class="i"><b>Inner world</b><br>The Word written on the heart by personal labour, not inherited second-hand.</div><div class="o"><b>Outer world</b><br>Governance that is accountable to a standard outside the ruler's will.</div></div>
+      </li>
+      <li>
+        <h3>Read it all the days of his life</h3>
+        <p class="verse">“It shall be with him, and he shall read therein all the days of his life: that he may learn to fear the LORD his God.” — 17:19</p>
+        <div class="pair"><div class="i"><b>Inner world</b><br>Lifelong, not seasonal, formation. Faithfulness that outlives mentors and crises.</div><div class="o"><b>Outer world</b><br>Leadership whose consistency over decades becomes its authority.</div></div>
+      </li>
+      <li>
+        <h3>Heart not lifted up; turn not aside</h3>
+        <p class="verse">“That his heart be not lifted up above his brethren, and that he turn not aside from the commandment, to the right hand, or to the left.” — 17:20</p>
+        <div class="pair"><div class="i"><b>Inner world</b><br>Humility, especially in success. Pride is the precept most often broken below.</div><div class="o"><b>Outer world</b><br>Staying within one's mandate; neither syncretism to the left nor presumption to the right.</div></div>
+      </li>
+    </ol>
+
+    <h3>The Deuterocanonical Witness</h3>
+    <div class="prose">
+      <p>The deuterocanonical wisdom books take up the same charter and press it on every ruler, reading kingship as stewardship of a kingdom that belongs to God.</p>
+    </div>
+    <blockquote>“Hear therefore, O ye kings, and understand … For power is given you of the Lord, and sovereignty from the Highest, who shall try your works, and search out your counsels. Because, being ministers of his kingdom, ye have not judged aright, nor kept the law.”<cite>Wisdom of Solomon 6:1, 3–4</cite></blockquote>
+    <blockquote>“The power of the earth is in the hand of the Lord, and in due time he will set over it one that is profitable.”<cite>Sirach (Ecclesiasticus) 10:4</cite></blockquote>
+    <blockquote>“The beginning of pride is when one departeth from God, and his heart is turned away from his Maker.”<cite>Sirach 10:12</cite></blockquote>
+    <blockquote>“All, except David and Ezekias and Josias, were defective: for they forsook the law of the most High, even the kings of Juda failed.”<cite>Sirach 49:4</cite></blockquote>
+    <div class="prose">
+      <p>Wisdom calls kings “ministers of his kingdom”: the outer throne is held in trust for the inner reign. Ben Sira's verdict is sterner than that of Kings and Chronicles. Of all Judah's kings, only Hezekiah and Josiah stand beside the measure. The other six kings in this study are counted among the “defective”, and their stories show why.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ASA -->
+<section id="asa">
+  <div class="wrap">
+    <span class="secnum">IV</span>
+    <h2>Asa</h2>
+    <p class="tagline">The Reforming King — Tearing Down What Was Tolerated</p>
+    <p class="refs">1 Kings 15:11–15 / 2 Chronicles 14–16</p>
+    <div class="prose">
+      <p>Asa was the first king of Judah to pursue aggressive reform. He expelled idols, dismantled high places, and deposed his own grandmother from her position of honour because of her Asherah pole. His early reign is a model of courageous thoroughness. In his latter years, however, he made an alliance with Aram rather than trusting the LORD, and when the seer Hanani rebuked him, he imprisoned him rather than repenting.</p>
+    </div>
+    <table class="map">
+      <thead><tr><th>Scripture</th><th>Reform / Action</th><th class="th-inner">Inner World<small>Kingdom of God</small></th><th class="th-outer">Outer World<small>Kingdom of heaven</small></th></tr></thead>
+      <tbody>
+        <tr><td class="ref">1 Kgs 15:12</td><td data-label="Reform / Action">Expelled male shrine prostitutes from the land</td><td class="in" data-label="Inner World">Cutting off pornography, sexual fantasy, or any practice that trades the sacred for counterfeit intimacy</td><td class="out" data-label="Outer World">Actively opposing sexual exploitation industries; refusing to fund or platform them</td></tr>
+        <tr><td class="ref">1 Kgs 15:13</td><td data-label="Reform / Action">Removed his grandmother Maacah from her position as queen mother because of her Asherah pole</td><td class="in" data-label="Inner World">Refusing to exempt family members or respected figures from the standard — no person's approval outranks obedience</td><td class="out" data-label="Outer World">Willingness to address idolatry even in institutional or family structures despite relational cost</td></tr>
+        <tr><td class="ref">2 Chron 14:3</td><td data-label="Reform / Action">Removed foreign altars and high places; broke down sacred stones</td><td class="in" data-label="Inner World">Dismantling ancestral shrines, family portraits with occultic history, or inherited thought systems that displace God</td><td class="out" data-label="Outer World">Preaching against and dismantling cultural idols — platforms, systems, and structures that draw corporate worship away from God</td></tr>
+        <tr><td class="ref">2 Chron 15:12–15</td><td data-label="Reform / Action">Led the nation in covenant renewal — seeking God wholeheartedly</td><td class="in" data-label="Inner World">Periodic personal covenant renewal — examining where drift has occurred and formally re-consecrating</td><td class="out" data-label="Outer World">Calling communities into corporate repentance and re-alignment to covenant</td></tr>
+      </tbody>
+    </table>
+    <div class="warning">
+      <span class="label">⚠ Warning — Where the King Erred</span>
+      <table class="map">
+        <thead><tr><th>Scripture</th><th>Failure</th><th class="th-inner">Inner World</th><th class="th-outer">Outer World</th></tr></thead>
+        <tbody>
+          <tr><td class="ref">2 Chron 16:2–3</td><td data-label="Failure">Made a treaty with Ben-Hadad of Aram rather than trusting God; imprisoned Hanani the seer when rebuked</td><td class="in" data-label="Inner World">Resorting to human alliances when the pressure intensifies — trusting strategy over God's sufficiency; hardening against correction</td><td class="out" data-label="Outer World">Leaders who silence prophetic rebuke rather than receive it; institutional defensiveness that protects reputation over righteousness</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="ledger-title">Measured against the charter</p>
+    <div class="ledger">
+      <div class="kept"><span class="lbl">Kept</span><em>Turn not aside</em> (17:20) — in his early reign he purged what every predecessor had tolerated, exempting no one, not even the queen mother.</div>
+      <div class="breached"><span class="lbl">Breached</span><em>Not return to Egypt</em> (17:16) — he bought Aram's army with the temple's silver and gold. Hanani's charge: “thou hast relied on the king of Syria, and not relied on the LORD” (2 Chron 16:7).</div>
+    </div>
+  </div>
+</section>
+
+<!-- JEHOSHAPHAT -->
+<section id="jehoshaphat">
+  <div class="wrap">
+    <span class="secnum">V</span>
+    <h2>Jehoshaphat</h2>
+    <p class="tagline">The Worshipping Warrior — Knowing When God Fights</p>
+    <p class="refs">2 Chronicles 17–20</p>
+    <div class="prose">
+      <p>Jehoshaphat sent teachers throughout Judah to instruct the people in the Law. When an overwhelming coalition of enemies came against him, God told him the battle was not his but God's. He appointed worshippers to lead the army — and the enemy destroyed themselves. Yet Jehoshaphat was repeatedly rebuked for forming alliances with wicked king Ahab and his house.</p>
+    </div>
+    <table class="map">
+      <thead><tr><th>Scripture</th><th>Reform / Action</th><th class="th-inner">Inner World<small>Kingdom of God</small></th><th class="th-outer">Outer World<small>Kingdom of heaven</small></th></tr></thead>
+      <tbody>
+        <tr><td class="ref">2 Chron 17:7–9</td><td data-label="Reform / Action">Sent officials and Levites throughout Judah to teach the Law</td><td class="in" data-label="Inner World">Saturating the inner world with the Word — systematic, not sporadic, intake of Scripture</td><td class="out" data-label="Outer World">Teaching, discipling, and ensuring those under your care have access to sound doctrine</td></tr>
+        <tr><td class="ref">2 Chron 19:5–7</td><td data-label="Reform / Action">Appointed judges with an explicit charge to judge for God, not man</td><td class="in" data-label="Inner World">Aligning your internal judgments and self-assessments with God's standard, not peer pressure</td><td class="out" data-label="Outer World">Building accountability structures and just systems in your sphere of influence</td></tr>
+        <tr><td class="ref">2 Chron 20:3</td><td data-label="Reform / Action">Proclaimed a fast and sought God when overwhelmed</td><td class="in" data-label="Inner World">Responding to overwhelm with consecration rather than control — fasting as repositioning before God</td><td class="out" data-label="Outer World">Leading others in corporate seeking rather than projecting false confidence</td></tr>
+        <tr><td class="ref">2 Chron 20:21–22</td><td data-label="Reform / Action">Appointed worshippers to lead the army into battle — the enemy was routed</td><td class="in" data-label="Inner World">Understanding that praise is a weapon — entering spiritual conflict through worship first</td><td class="out" data-label="Outer World">Knowing when the battle belongs to the Lord and positioning accordingly rather than forcing human solutions</td></tr>
+      </tbody>
+    </table>
+    <div class="warning">
+      <span class="label">⚠ Warning — Where the King Erred</span>
+      <table class="map">
+        <thead><tr><th>Scripture</th><th>Failure</th><th class="th-inner">Inner World</th><th class="th-outer">Outer World</th></tr></thead>
+        <tbody>
+          <tr><td class="ref">2 Chron 18:1–3 / 19:2</td><td data-label="Failure">Made an alliance with Ahab through marriage; went to battle alongside him despite prophetic warning</td><td class="in" data-label="Inner World">Compromising discernment for the sake of political or social belonging — yoking with unbelievers to secure relationships</td><td class="out" data-label="Outer World">Building institutional partnerships with unrighteous power; the approval of influential people silencing prophetic caution</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="ledger-title">Measured against the charter</p>
+    <div class="ledger">
+      <div class="kept"><span class="lbl">Kept</span><em>A copy of the law</em> (17:18–19) — his teachers “taught in Judah, and had the book of the law of the LORD with them” (2 Chron 17:9). He extended the king's charter to the whole people.</div>
+      <div class="breached"><span class="lbl">Breached</span><em>Lest his heart turn away</em> (17:17) — the marriage alliance brought Athaliah, Ahab's daughter, into the house of David. She later seized the throne and tried to destroy the royal line (2 Kgs 8:18; 11:1).</div>
+    </div>
+  </div>
+</section>
+
+<!-- JOASH -->
+<section id="joash">
+  <div class="wrap">
+    <span class="secnum">VI</span>
+    <h2>Joash (Jehoash)</h2>
+    <p class="tagline">The Temple Restorer — Faithfulness Under Mentorship</p>
+    <p class="refs">2 Kings 11–12 / 2 Chronicles 23–24</p>
+    <div class="prose">
+      <p>Joash was hidden in the Temple as an infant to save him from Athaliah's massacre. Raised by the priest Jehoiada, he became king at age seven. As long as Jehoiada lived, Joash sought the LORD and organised the repair of the Temple. After Jehoiada's death, however, he abandoned the house of God and even had Zechariah — Jehoiada's son — stoned for rebuking him. His reign exposes the difference between borrowed faith and rooted faith.</p>
+    </div>
+    <table class="map">
+      <thead><tr><th>Scripture</th><th>Reform / Action</th><th class="th-inner">Inner World<small>Kingdom of God</small></th><th class="th-outer">Outer World<small>Kingdom of heaven</small></th></tr></thead>
+      <tbody>
+        <tr><td class="ref">2 Kgs 12:4–5</td><td data-label="Reform / Action">Ordered the collection of offerings for Temple repair</td><td class="in" data-label="Inner World">Taking personal ownership of the condition of your inner life — not assuming inherited structures are enough</td><td class="out" data-label="Outer World">Mobilising resources for the restoration of institutions that serve God's people</td></tr>
+        <tr><td class="ref">2 Chron 24:4</td><td data-label="Reform / Action">Decided to restore the house of the LORD</td><td class="in" data-label="Inner World">An intentional decision to restore what has fallen into disrepair — spiritual infrastructure requires active maintenance</td><td class="out" data-label="Outer World">Leading institutional reformation; diagnosing decay and mobilising people toward restoration</td></tr>
+        <tr><td class="ref">2 Kgs 12:9</td><td data-label="Reform / Action">Set up a chest at the Temple gate for freewill offerings — the people gave generously</td><td class="in" data-label="Inner World">Creating accessible, non-coercive structures for generosity in your inner economy</td><td class="out" data-label="Outer World">Building transparent giving systems that empower ordinary people to participate in the work of God</td></tr>
+      </tbody>
+    </table>
+    <div class="warning">
+      <span class="label">⚠ Warning — Where the King Erred</span>
+      <table class="map">
+        <thead><tr><th>Scripture</th><th>Failure</th><th class="th-inner">Inner World</th><th class="th-outer">Outer World</th></tr></thead>
+        <tbody>
+          <tr><td class="ref">2 Chron 24:17–21</td><td data-label="Failure">After Jehoiada died, abandoned the house of God and served Asherah poles; had Zechariah son of Jehoiada stoned</td><td class="in" data-label="Inner World">Faith built on a mentor's presence rather than personal encounter — when the covering is removed, the uncultivated heart is exposed</td><td class="out" data-label="Outer World">Leadership that holds to righteousness only through external accountability; the danger of institutional piety without personal conviction</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="ledger-title">Measured against the charter</p>
+    <div class="ledger">
+      <div class="kept"><span class="lbl">Kept</span><em>Chosen by the LORD</em> (17:15) — preserved by God's hand and crowned with the testimony in his hand (2 Kgs 11:12). He restored the house while his formation lasted.</div>
+      <div class="breached"><span class="lbl">Breached</span><em>All the days of his life</em> (17:19) — he did right only “all the days of Jehoiada the priest” (2 Chron 24:2). Later he stripped the Temple's gold to buy off Hazael of Syria (2 Kgs 12:18).</div>
+    </div>
+  </div>
+</section>
+
+<!-- AMAZIAH -->
+<section id="amaziah">
+  <div class="wrap">
+    <span class="secnum">VII</span>
+    <h2>Amaziah</h2>
+    <p class="tagline">The Partial King — Half-Heartedness and Its Cost</p>
+    <p class="refs">2 Kings 14 / 2 Chronicles 25</p>
+    <div class="prose">
+      <p>Amaziah did what was right in the eyes of the LORD, but not wholeheartedly. He dismissed foreign mercenaries at a prophet's instruction and won a great victory. Then he brought back the gods of the Edomites he had defeated and worshipped them. His story is one of the clearest warnings against syncretism, and against the pride that follows obedience when that obedience is not grounded in love for God.</p>
+    </div>
+    <table class="map">
+      <thead><tr><th>Scripture</th><th>Reform / Action</th><th class="th-inner">Inner World<small>Kingdom of God</small></th><th class="th-outer">Outer World<small>Kingdom of heaven</small></th></tr></thead>
+      <tbody>
+        <tr><td class="ref">2 Chron 25:7–10</td><td data-label="Reform / Action">Dismissed 100,000 hired Israelite soldiers at the prophet's word — trusting God over military strength</td><td class="in" data-label="Inner World">The willingness to release apparent advantage when the Word of God calls for it — obedience at financial and strategic cost</td><td class="out" data-label="Outer World">Making hard structural decisions in response to prophetic direction rather than pragmatic calculation</td></tr>
+        <tr><td class="ref">2 Chron 25:14</td><td data-label="Reform / Action">Brought back the gods of the Edomites and began to worship them after defeating Edom</td><td class="in" data-label="Inner World">Syncretism: incorporating the idols of conquered areas into your own worship — spiritual tourism after victory</td><td class="out" data-label="Outer World">Importing the value systems or belief structures of those you have overcome, especially after seasons of external success</td></tr>
+      </tbody>
+    </table>
+    <div class="warning">
+      <span class="label">⚠ Warning — Where the King Erred</span>
+      <table class="map">
+        <thead><tr><th>Scripture</th><th>Failure</th><th class="th-inner">Inner World</th><th class="th-outer">Outer World</th></tr></thead>
+        <tbody>
+          <tr><td class="ref">2 Chron 25:19–20</td><td data-label="Failure">Proud after victory, challenged Israel to battle against prophetic warning and was utterly defeated</td><td class="in" data-label="Inner World">Pride that interprets God's past help as confirmation of present presumption — success as a spiritual sedative</td><td class="out" data-label="Outer World">Leaders who mistake momentum for mandate; the arrogance of the publicly successful who no longer receive correction</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="ledger-title">Measured against the charter</p>
+    <div class="ledger">
+      <div class="kept"><span class="lbl">Kept</span><em>Not multiply horses</em> (17:16) — he released a paid army and the hundred talents spent on it, trusting the word that “God hath power to help, and to cast down” (2 Chron 25:8).</div>
+      <div class="breached"><span class="lbl">Breached</span><em>Heart not lifted up; turn not aside</em> (17:20) — he turned aside to Edom's gods, and was told, “thine heart lifteth thee up to boast” (2 Chron 25:19).</div>
+    </div>
+  </div>
+</section>
+
+<!-- UZZIAH -->
+<section id="uzziah">
+  <div class="wrap">
+    <span class="secnum">VIII</span>
+    <h2>Uzziah (Azariah)</h2>
+    <p class="tagline">The Prosperous King — The Danger of Power Without Boundary</p>
+    <p class="refs">2 Kings 15 / 2 Chronicles 26</p>
+    <div class="prose">
+      <p>Uzziah reigned fifty-two years in Jerusalem. As long as he sought the LORD, God gave him extraordinary success: military victory, agricultural abundance, engineering achievements, and an army equipped with the best technology of the age. But when he was strong, his heart was lifted up to his own destruction. He entered the Temple to burn incense, a function reserved for priests. When the priests confronted him, he raged and was struck with leprosy on the spot.</p>
+    </div>
+    <table class="map">
+      <thead><tr><th>Scripture</th><th>Reform / Action</th><th class="th-inner">Inner World<small>Kingdom of God</small></th><th class="th-outer">Outer World<small>Kingdom of heaven</small></th></tr></thead>
+      <tbody>
+        <tr><td class="ref">2 Chron 26:4–5</td><td data-label="Reform / Action">Sought God in the days of Zechariah, and God made him prosper</td><td class="in" data-label="Inner World">Sustained seeking as the source of sustained flourishing — not natural gifting but covenantal dependence</td><td class="out" data-label="Outer World">Organisations and institutions that flourish because leadership is rooted in active, not historical, dependence on God</td></tr>
+        <tr><td class="ref">2 Chron 26:9–10</td><td data-label="Reform / Action">Built towers, cut out cisterns, kept large herds, had vineyards — enterprise and agriculture ordered under wisdom</td><td class="in" data-label="Inner World">Stewarding the full breadth of your capacities — intellectual, creative, practical — under God rather than compartmentalising</td><td class="out" data-label="Outer World">Building multi-dimensional institutions: spiritual, material, civic — an integrated kingdom rather than a siloed ministry</td></tr>
+      </tbody>
+    </table>
+    <div class="warning">
+      <span class="label">⚠ Warning — Where the King Erred</span>
+      <table class="map">
+        <thead><tr><th>Scripture</th><th>Failure</th><th class="th-inner">Inner World</th><th class="th-outer">Outer World</th></tr></thead>
+        <tbody>
+          <tr><td class="ref">2 Chron 26:16–19</td><td data-label="Failure">Entered the Temple to burn incense himself — struck with leprosy for transgressing priestly function</td><td class="in" data-label="Inner World">Strength becoming the justification for boundary violation — the pride that assumes success is permission</td><td class="out" data-label="Outer World">Leaders who conflate their sphere of authority with universal authority; anointing in one domain presumed to cover all domains</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="ledger-title">Measured against the charter</p>
+    <div class="ledger">
+      <div class="kept"><span class="lbl">Kept</span><em>Fear the LORD</em> (17:19) — “as long as he sought the LORD, God made him to prosper” (2 Chron 26:5).</div>
+      <div class="breached"><span class="lbl">Breached</span><em>Heart not lifted up</em> (17:20) — almost word for word: “when he was strong, his heart was lifted up to his destruction” (2 Chron 26:16). He also crossed into the priesthood reserved to Aaron's sons (Num 18:7).</div>
+    </div>
+  </div>
+</section>
+
+<!-- JOTHAM -->
+<section id="jotham">
+  <div class="wrap">
+    <span class="secnum">IX</span>
+    <h2>Jotham</h2>
+    <p class="tagline">The Steady King — Faithful Without Fanfare</p>
+    <p class="refs">2 Kings 15:32–38 / 2 Chronicles 27</p>
+    <div class="prose">
+      <p>Jotham is one of Scripture's quietest righteous kings. He did what was right in the eyes of the LORD. He built and fortified. He fought and won. He grew mighty because he ordered his ways before the LORD his God. He did not enter the Temple to burn incense as his father had. Yet the high places remained, and the people continued in corruption. His faithfulness was steady and uncelebrated, and his record stands without major failure.</p>
+    </div>
+    <table class="map">
+      <thead><tr><th>Scripture</th><th>Reform / Action</th><th class="th-inner">Inner World<small>Kingdom of God</small></th><th class="th-outer">Outer World<small>Kingdom of heaven</small></th></tr></thead>
+      <tbody>
+        <tr><td class="ref">2 Chron 27:3–4</td><td data-label="Reform / Action">Built the Upper Gate of the Temple; built extensively on the wall of Ophel; fortified cities in Judah</td><td class="in" data-label="Inner World">Building, not just worshipping — active investment in the infrastructure of God's kingdom in your generation</td><td class="out" data-label="Outer World">Strengthening the defensive and structural capacities of the institutions you steward; building for the next generation</td></tr>
+        <tr><td class="ref">2 Chron 27:5</td><td data-label="Reform / Action">Defeated the Ammonites — they paid tribute for three years</td><td class="in" data-label="Inner World">Willingness to engage conflict when called; not passive in the face of opposition to the kingdom</td><td class="out" data-label="Outer World">Confident, measured use of authority against opposition without the grandiosity of those who need the victory to define them</td></tr>
+        <tr><td class="ref">2 Chron 27:6</td><td data-label="Reform / Action">Grew mighty because he ordered his ways before the LORD his God</td><td class="in" data-label="Inner World">The quiet discipline of private ordering — the consistency that produces public authority without chasing public moments</td><td class="out" data-label="Outer World">The leader whose life is characterised by faithfulness in unseen rooms; authority that accrues through sustained integrity</td></tr>
+      </tbody>
+    </table>
+    <p class="note"><strong>Note.</strong> The high places were not removed (2 Kgs 15:35). This was not a personal failure of Jotham's character but the persistent ceiling of unreformed popular worship — the natural horizon of consecrated human effort before the fullness of the Gospel. The people still acted corruptly.</p>
+    <p class="ledger-title">Measured against the charter</p>
+    <div class="ledger">
+      <div class="kept"><span class="lbl">Kept</span><em>Heart not lifted up</em> (17:20) — he “prepared his ways before the LORD” (2 Chron 27:6) and kept the boundary his father crossed: “he entered not into the temple” (27:2).</div>
+      <div class="breached"><span class="lbl">Left undone</span>No personal breach is recorded. The outer reform stopped short: the high places stood, and the inner reign of the king did not yet reach the people.</div>
+    </div>
+  </div>
+</section>
+
+<!-- HEZEKIAH -->
+<section id="hezekiah">
+  <div class="wrap">
+    <span class="secnum">X</span>
+    <h2>Hezekiah</h2>
+    <p class="tagline">The Restorer — Reopening What Had Been Shut</p>
+    <p class="refs">2 Kings 18–20 / 2 Chronicles 29–32</p>
+    <div class="prose">
+      <p>Hezekiah came to power after his father Ahaz had shut the Temple doors and set up altars on every street corner. Hezekiah's first act was to reopen and cleanse the Temple. He restored Passover, destroyed the bronze serpent that had become an idol, and trusted God when Assyria surrounded Jerusalem. He uniquely received fifteen extra years of life through prayer. But he showed the treasuries of Jerusalem to the Babylonian envoys, with a pride that brought a prophetic word of judgment on his descendants.</p>
+    </div>
+    <table class="map">
+      <thead><tr><th>Scripture</th><th>Reform / Action</th><th class="th-inner">Inner World<small>Kingdom of God</small></th><th class="th-outer">Outer World<small>Kingdom of heaven</small></th></tr></thead>
+      <tbody>
+        <tr><td class="ref">2 Chron 29:3–11</td><td data-label="Reform / Action">Reopened and consecrated the Temple in his first month</td><td class="in" data-label="Inner World">Reopening areas of your inner life that have been shut through shame, trauma, or neglect — returning access to God</td><td class="out" data-label="Outer World">Restoring worship and spiritual infrastructure in institutions or communities where it has been abandoned</td></tr>
+        <tr><td class="ref">2 Kgs 18:4</td><td data-label="Reform / Action">Destroyed Nehushtan — the bronze serpent Moses made, which Israel was worshipping</td><td class="in" data-label="Inner World">Identifying when something that was once used by God has become an object of attachment or idolisation rather than a pointer to Him</td><td class="out" data-label="Outer World">Discerning and dismantling ministry methods, traditions, or symbols that have become ends in themselves</td></tr>
+        <tr><td class="ref">2 Chron 30:1–5</td><td data-label="Reform / Action">Restored Passover — a feast not kept for generations</td><td class="in" data-label="Inner World">Recovering neglected spiritual practices — communion, fasting, sabbath — that re-anchor identity in covenant history</td><td class="out" data-label="Outer World">Calling a generation back to their spiritual inheritance; recovering what drift and busyness have abandoned</td></tr>
+        <tr><td class="ref">2 Kgs 19:14–19</td><td data-label="Reform / Action">Spread Sennacherib's threatening letter before the Lord in the Temple</td><td class="in" data-label="Inner World">Bringing your anxieties, threats, and impossibilities literally before God in prayer rather than strategising alone</td><td class="out" data-label="Outer World">Modelling transparent dependence on God under public pressure rather than projecting self-sufficiency</td></tr>
+      </tbody>
+    </table>
+    <div class="warning">
+      <span class="label">⚠ Warning — Where the King Erred</span>
+      <table class="map">
+        <thead><tr><th>Scripture</th><th>Failure</th><th class="th-inner">Inner World</th><th class="th-outer">Outer World</th></tr></thead>
+        <tbody>
+          <tr><td class="ref">2 Kgs 20:12–19</td><td data-label="Failure">Showed the Babylonian envoys all his treasuries and armouries — received a prophetic word of coming exile</td><td class="in" data-label="Inner World">The pride of the recovered — using seasons of blessing to build personal prestige; showing off what God gave you</td><td class="out" data-label="Outer World">Leaders who leverage testimony and revival fruit for institutional impression-management rather than giving God the glory</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="ledger-title">Measured against the charter</p>
+    <div class="ledger">
+      <div class="kept"><span class="lbl">Kept</span><em>Turn not aside</em> (17:20) — “he trusted in the LORD God of Israel … he clave to the LORD, and departed not from following him” (2 Kgs 18:5–6).</div>
+      <div class="breached"><span class="lbl">Breached</span><em>Silver and gold; heart lifted up</em> (17:17, 20) — he “had exceeding much riches” and put them on display, and “his heart was lifted up” (2 Chron 32:25, 27).</div>
+    </div>
+    <div class="deutero">
+      <span class="lbl">Deuterocanonical witness</span>
+      <p>“For Ezekias had done the thing that pleased the Lord, and was strong in the ways of David his father.” — Sirach 48:22. Ben Sira also remembers the fortified city and the conduit of water (48:17) as the outer fruit of an inwardly steadfast reign.</p>
+    </div>
+  </div>
+</section>
+
+<!-- JOSIAH -->
+<section id="josiah">
+  <div class="wrap">
+    <span class="secnum">XI</span>
+    <h2>Josiah</h2>
+    <p class="tagline">The Covenant Restorer — The Book That Changed Everything</p>
+    <p class="refs">2 Kings 22–23 / 2 Chronicles 34–35</p>
+    <div class="prose">
+      <p>Josiah came to the throne at eight years old and by sixteen was actively seeking God. At twenty-six, during Temple repairs, the Book of the Law was rediscovered. When it was read to him, he tore his robes. He then enacted the most thorough reformation in Israel's history, systematically dismantling every form of false worship. No king before or after turned to the LORD with all his heart, soul, and might as Josiah did.</p>
+    </div>
+    <table class="map">
+      <thead><tr><th>Scripture</th><th>Reform / Action</th><th class="th-inner">Inner World<small>Kingdom of God</small></th><th class="th-outer">Outer World<small>Kingdom of heaven</small></th></tr></thead>
+      <tbody>
+        <tr><td class="ref">2 Kgs 22:11</td><td data-label="Reform / Action">Tore his robes when the Law was read — grieved over the nation's departure</td><td class="in" data-label="Inner World">Cultivating genuine sensitivity to sin — not a performance of remorse but actual grief when confronted with departure from God</td><td class="out" data-label="Outer World">Allowing Scripture to produce real conviction rather than academic engagement</td></tr>
+        <tr><td class="ref">2 Kgs 23:4–7</td><td data-label="Reform / Action">Removed Asherah poles, male shrine prostitutes, and articles made for Baal from the Temple</td><td class="in" data-label="Inner World">A systematic audit of the inner life — identifying every object of alternative trust, comfort, or identity that occupies sacred space</td><td class="out" data-label="Outer World">Confronting sexual immorality and idolatrous systems embedded within religious or social institutions</td></tr>
+        <tr><td class="ref">2 Kgs 23:10</td><td data-label="Reform / Action">Desecrated Topheth — the place where children were sacrificed to Molech</td><td class="in" data-label="Inner World">Refusing to sacrifice your children, your calling, or your future on the altar of ambition, approval, or financial security</td><td class="out" data-label="Outer World">Active opposition to abortion, child sacrifice, and any system that destroys children for adult convenience</td></tr>
+        <tr><td class="ref">2 Kgs 23:24</td><td data-label="Reform / Action">Eliminated mediums, spiritists, household gods, and idols throughout Judah</td><td class="in" data-label="Inner World">Clearing the household and personal space of objects with occultic history — ancestral artefacts, inherited objects of worship</td><td class="out" data-label="Outer World">Addressing occult infiltration in culture — witchcraft normalised through media, entertainment, and fashion</td></tr>
+        <tr><td class="ref">2 Chron 35:1–19</td><td data-label="Reform / Action">Kept the Passover — the greatest since Samuel</td><td class="in" data-label="Inner World">Returning to the foundational acts of remembrance that re-establish your identity as a covenant people</td><td class="out" data-label="Outer World">Leading your community in recovering the depth and intentionality of ordinances that have become routine</td></tr>
+      </tbody>
+    </table>
+    <p class="note"><strong>Note.</strong> Josiah died prematurely at Megiddo when he unwisely engaged Pharaoh Necho, despite Necho claiming to come at God's command (2 Chron 35:22). This does not diminish his covenant faithfulness. It does underline that even the most devoted reformers must remain responsive to the word of the LORD in every season, not merely the word they received at the beginning.</p>
+    <p class="ledger-title">Measured against the charter</p>
+    <div class="ledger">
+      <div class="kept"><span class="lbl">Kept</span><em>The book, read all his days; turned not aside</em> (17:18–20) — the rediscovered Book of the Law governed his reign, he read it aloud to all the people (2 Kgs 23:2), and he “turned not aside to the right hand or to the left” (22:2). He is the charter fulfilled “according to all the law of Moses” (23:25).</div>
+      <div class="breached"><span class="lbl">Caution</span>At Megiddo he did not hearken “unto the words of Necho from the mouth of God” (2 Chron 35:22). Even the most faithful reign must keep listening.</div>
+    </div>
+    <div class="deutero">
+      <span class="lbl">Deuterocanonical witness</span>
+      <p>“The remembrance of Josias is like the composition of the perfume that is made by the art of the apothecary … He directed his heart unto the Lord, and in the time of the ungodly he established the worship of God.” — Sirach 49:1, 3</p>
+    </div>
+  </div>
+</section>
+
+<!-- LIMITS -->
+<section id="limits">
+  <div class="wrap">
+    <span class="secnum">XII</span>
+    <h2>The Limits of the Reformer</h2>
+    <p class="tagline">Reform Received, Not Achieved</p>
+    <div class="prose">
+      <p>The warnings above are not only about kings who stopped trying. Several of the worst failures in Scripture come from those who tried harder, on their own terms. Reform pursued in one's own strength is not a safer version of the same road. It is a different road, and its failures tend to be larger. Four patterns recur.</p>
+    </div>
+
+    <h3>The house swept clean, but empty</h3>
+    <div class="prose">
+      <p>“When the unclean spirit is gone out of a man… he saith, I will return into my house… and findeth it empty, swept, and garnished. Then goeth he, and taketh with himself seven other spirits more wicked than himself… and the last state of that man is worse than the first” (Matt 12:43–45). An inner world that has been purged but is not governed is not neutral. Joash is this pattern in miniature: the house was in order while Jehoiada lived, and Asherah poles came back when he died. Amaziah is the same: obedient at great cost, then he carried Edom's gods home.</p>
+    </div>
+
+    <h3>Zeal without a whole heart</h3>
+    <div class="prose">
+      <p>Jehu is not a king of Judah but of Israel, and he is the clearest example outside this study. He destroyed Baal worship and was commended for it (2 Kgs 10:28–30), yet he “took no heed to walk in the law of the LORD God of Israel with all his heart” (10:31). Thorough reform can coexist with a heart that was never yielded. That is why Josiah's turning “with all his heart, and with all his soul, and with all his might” (2 Kgs 23:25) is the standard, and not the scale of the demolition.</p>
+    </div>
+
+    <h3>Beginning in the Spirit, finishing in the flesh</h3>
+    <div class="prose">
+      <p>“Are ye so foolish? having begun in the Spirit, are ye now made perfect by the flesh?” (Gal 3:3). Amaziah, Uzziah and Hezekiah each fell at a point of strength: “thine heart lifteth thee up to boast” (2 Chron 25:19); “when he was strong, his heart was lifted up to his destruction” (26:16); “Hezekiah rendered not again according to the benefit done unto him; for his heart was lifted up” (32:25). Perfection attempted in one's own strength turns each success into the next trap.</p>
+    </div>
+
+    <h3>Carrying everything</h3>
+    <div class="prose">
+      <p>“The thing that thou doest is not good. Thou wilt surely wear away, both thou, and this people that is with thee” (Exod 18:17–18). Jotham's record has no major failure partly because it was bounded: he ordered his ways, built what was his to build, and left the high places he could not remove. Even Josiah, the most devoted reformer, ended at Megiddo acting on his own judgement. A reformer who cannot share the load or rest is on the way to one of these other failures.</p>
+    </div>
+
+    <div class="prose">
+      <p>The tables in this study should therefore be read as the fruit of a received reign, not as a checklist for self-improvement. The inner world here is the kingdom of God, entered by new birth (John 3:3–5) and governed by the Spirit. The actions listed are what that reign produces when it is yielded to. They are not what establishes it. Christ alone is the King who reigns perfectly. Every king in this study fell short, which is why the measure was always pointing past David to his Son (Luke 1:32–33), and why believers reign only “in life by one, Jesus Christ” (Rom 5:17).</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRINCIPLE -->
+<section id="principle">
+  <div class="wrap">
+    <span class="secnum">XIII</span>
+    <h2>The Governing Principle</h2>
+    <div class="prose">
+      <p>Every reform these kings enacted began with a personal reckoning — a moment where the Word of God exposed the gap between what was and what should be. The inner world always precedes the outer. You cannot tear down a high place you have not first seen as an abomination. You cannot restore Passover to a nation you have not first recovered it for yourself.</p>
+      <p>The pattern of failure is equally instructive. Joash collapses when his mentor dies. Amaziah imports the gods of those he defeats. Uzziah crosses into a priestly function his anointing did not cover. Jehoshaphat makes peace with Ahab to his own cost. Even Hezekiah's pride in the recovery season sowed the seeds of Babylonian exile. The king who reigns well is not the king who never falls, but the king who receives the Word of correction without imprisoning the prophet.</p>
+      <p>The charter of Deuteronomy 17 was never a list of outward restrictions alone. Horses, wives, silver and gold were each named because each one turns the heart, and a turned heart cannot hold the outer throne. The kingdom of God within is the seat from which the kingdom of heaven is made tangible.</p>
+      <p>The kingdom of heaven is manifested wherever Christ's reign is yielded to. The king who reigns well is the king whose inner governance is so thoroughly submitted that his outer governance becomes an extension of heaven's order — not his own ambition, fear, or appetite.</p>
+    </div>
+    <blockquote>“He who rules his spirit is greater than he who takes a city.”<cite>Proverbs 16:32</cite></blockquote>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Scripture quotations within the charter, measure and deuterocanonical sections are from the Authorised (King James) Version, including the Apocrypha.</p>
+    <p><a href="bleach-ontological-mapping.html">Bleach — Ontological Mapping</a></p>
+    <a class="back-to-top" href="#top">&uarr; Back to top</a>
+  </div>
+</footer>
+
+</body>
+</html>
