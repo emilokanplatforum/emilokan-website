@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grace: Redemption, Deception and the Renewal of the Mind — Emi Lokan</title>
+<meta name="description" content="A doctrine of grace in four layers: redemption from the curse of the Torah, the counterfeit that mimics it, the distortion of perception, and the limits of what was redeemed. By Emi Lokan.">
+<style>
+  :root {
+    --ink: #1c1a17; --ink-soft: #4a453e; --paper: #f6f6f0; --paper-raised: #ffffff;
+    --accent: #1f5f5b; --rule: #d5d9cc; --toc-bg: #eceee4;
+    --verdict: #1f5f5b; --verdict-bg: #e2eeea;
+    --mimic: #8a5a14; --seen: #4b3f75; --scope: #7a2e2e; --scope-bg: #f5e7e4;
+    --serif: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio', P052, serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #ece7de; --ink-soft: #bdb6a9; --paper: #12171a; --paper-raised: #1a2125;
+      --accent: #7fc4bb; --rule: #2e3a3f; --toc-bg: #182024;
+      --verdict: #7fc4bb; --verdict-bg: #14262a;
+      --mimic: #d4ad6a; --seen: #b8a9ee; --scope: #e08a82; --scope-bg: #2a1b1a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #ece7de; --ink-soft: #bdb6a9; --paper: #12171a; --paper-raised: #1a2125;
+    --accent: #7fc4bb; --rule: #2e3a3f; --toc-bg: #182024;
+    --verdict: #7fc4bb; --verdict-bg: #14262a;
+    --mimic: #d4ad6a; --seen: #b8a9ee; --scope: #e08a82; --scope-bg: #2a1b1a;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); }
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--serif); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  h1, h2, h3 { line-height: 1.2; margin: 0; }
+
+  header.hero { padding: 72px 0 40px; text-align: center; border-bottom: 1px solid var(--rule); margin-bottom: 40px; }
+  .kicker { font-family: var(--sans); letter-spacing: 0.18em; text-transform: uppercase; font-size: 12px; color: var(--accent); margin: 0 0 18px; }
+  h1.title { font-size: clamp(2.6rem, 7vw, 3.8rem); margin: 0 0 8px; letter-spacing: 0.02em; }
+  .subtitle { font-style: italic; color: var(--ink-soft); font-size: 1.15rem; margin: 0 0 22px; }
+  .byline { font-family: var(--sans); font-size: 13px; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.1em; margin: 0; }
+  .lede { margin: 0 0 8px; }
+  .lede p { font-size: 1.08rem; margin: 0 0 1.15em; }
+  .epigraph { margin: 1.6em 0 40px; padding: 0.2em 0 0.2em 1.2em; border-left: 3px solid var(--accent); font-size: 1.15rem; font-style: italic; }
+  .epigraph cite, blockquote cite { display: block; font-style: normal; font-family: var(--sans); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); margin-top: 0.5em; }
+
+  nav.toc { background: var(--toc-bg); border: 1px solid var(--rule); border-radius: 10px; padding: 22px 26px 26px; margin: 0 0 24px; }
+  nav.toc h2 { font-family: var(--sans); font-size: 13px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-soft); margin: 0 0 14px; }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 0 0 8px; }
+  nav.toc a { color: var(--ink); text-decoration: none; font-size: 0.95rem; }
+  nav.toc a:hover { color: var(--accent); text-decoration: underline; }
+  nav.toc .num { display: inline-block; min-width: 2.4rem; }
+  nav.toc .group { font-family: var(--sans); font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-soft); margin: 14px 0 8px; }
+  nav.toc .group:first-child { margin-top: 0; }
+
+  section { padding: 0; scroll-margin-top: 24px; }
+  section > .wrap { border-top: 1px solid var(--rule); padding-top: 0.4em; margin-top: 3em; }
+  .secnum { display: block; font-family: var(--sans); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin: 1em 0 0.3em; }
+  section h2 { font-size: 1.7rem; margin: 0 0 0.2em; }
+  .tagline { font-style: italic; color: var(--ink-soft); font-size: 1.1rem; margin: 0 0 0.2em; }
+  .refs { font-family: var(--sans); font-size: 13px; color: var(--ink-soft); margin: 0 0 1.4em; }
+  section h3 { font-size: 1.2rem; margin: 2em 0 0.5em; color: var(--accent); }
+  p { margin: 0 0 1.15em; font-size: 1.08rem; }
+  blockquote { margin: 1.6em 0; padding: 0.2em 0 0.2em 1.2em; border-left: 3px solid var(--accent); font-size: 1.12rem; font-style: italic; }
+  blockquote p { margin: 0; font-size: inherit; }
+  .gk { font-style: normal; }
+
+  /* the four layers */
+  .layers { margin: 1.8em 0 1.2em; border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; background: var(--paper-raised); }
+  .layer { display: grid; grid-template-columns: 9.6rem 1fr; border-top: 1px solid var(--rule); }
+  .layer:first-child { border-top: none; }
+  .layer .lname { padding: 16px 16px; border-left: 5px solid var(--c); background: var(--toc-bg); background: color-mix(in srgb, var(--c) 9%, var(--paper-raised)); }
+  .layer .lname b { display: block; font-size: 1.08rem; color: var(--c); }
+  .layer .lname span { display: block; font-family: var(--sans); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft); margin-top: 4px; }
+  .layer .lbody { padding: 16px 20px 6px; }
+  .layer .lbody p { margin: 0 0 0.6em; font-size: 1rem; line-height: 1.6; }
+  .layer .lrefs { font-family: var(--sans); font-size: 13px; color: var(--ink-soft); }
+  .l1 { --c: var(--verdict); } .l2 { --c: var(--mimic); } .l3 { --c: var(--seen); } .l4 { --c: var(--scope); }
+
+  .realms { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 1.6em 0; }
+  .realm { background: var(--paper-raised); border: 1px solid var(--rule); border-top: 3px solid var(--verdict); border-radius: 8px; padding: 18px 20px; }
+  .realm.trainer { border-top-color: var(--seen); }
+  .realm h3 { margin: 0 0 2px; color: var(--verdict); }
+  .realm.trainer h3 { color: var(--seen); }
+  .realm .greek { font-style: italic; color: var(--ink-soft); margin-bottom: 10px; }
+  .realm ul { margin: 0; padding-left: 1.1em; font-size: 0.98rem; }
+  .realm li { margin: 6px 0; }
+
+  .kinds { display: grid; grid-template-columns: repeat(auto-fit, minmax(205px, 1fr)); gap: 14px; margin: 1.6em 0; }
+  .kind { background: var(--paper-raised); border: 1px solid var(--rule); border-top: 3px solid var(--c); border-radius: 8px; padding: 16px 16px 12px; }
+  .kind h3 { margin: 0 0 2px; font-size: 1.1rem; color: var(--c); }
+  .kind .lbl { display: block; font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 8px; }
+  .kind p { font-size: 0.95rem; line-height: 1.6; margin: 0 0 0.7em; }
+  .kind .krefs { font-family: var(--sans); font-size: 12.5px; color: var(--ink-soft); }
+  .k1 { --c: var(--seen); } .k2 { --c: var(--scope); } .k3 { --c: var(--verdict); }
+
+  table { width: 100%; border-collapse: collapse; margin: 1.6em 0 2em; font-size: 0.92rem; font-family: var(--sans); line-height: 1.55; }
+  th, td { border: 1px solid var(--rule); padding: 10px 12px; text-align: left; vertical-align: top; }
+  th { background: var(--toc-bg); font-weight: 600; }
+  tr:nth-child(even) td { background: color-mix(in srgb, var(--toc-bg) 40%, var(--paper)); }
+  td.ref { font-weight: 600; color: var(--accent); width: 7.5rem; }
+  th.th-conv { color: var(--verdict); } th.th-cond { color: var(--scope); }
+  td .q { font-family: var(--serif); font-style: italic; }
+
+  .ledger-title { font-family: var(--sans); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft); margin: 2em 0 10px; }
+  .ledger { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0 0 1em; }
+  .ledger div { padding: 14px 16px; border-radius: 8px; font-size: 0.98rem; line-height: 1.6; }
+  .ledger .redeemed { background: var(--verdict-bg); border-left: 3px solid var(--verdict); }
+  .ledger .notcovered { background: var(--scope-bg); border-left: 3px solid var(--scope); }
+  .ledger .lbl { display: block; font-family: var(--sans); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; margin-bottom: 4px; }
+  .ledger .redeemed .lbl { color: var(--verdict); } .ledger .notcovered .lbl { color: var(--scope); }
+  .ledger ul { margin: 0; padding-left: 1.1em; }
+  .ledger li { margin: 4px 0; }
+
+  .note { border-left: 3px solid var(--rule); padding: 0.2em 0 0.2em 1em; color: var(--ink-soft); font-style: italic; margin: 1.4em 0 1.4em; }
+  .note strong { font-style: normal; color: var(--ink); }
+  .word { margin: 1.4em 0; padding: 14px 18px; background: var(--paper-raised); border: 1px dashed var(--rule); border-radius: 8px; }
+  .word .lbl { display: block; font-family: var(--sans); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: var(--accent); margin-bottom: 4px; }
+  .word p { margin: 0; font-size: 1rem; }
+  .crosslink { font-family: var(--sans); font-size: 13px; letter-spacing: 0.04em; }
+
+  footer { margin-top: 3em; padding: 2em 0 96px; border-top: 1px solid var(--rule); text-align: center; color: var(--ink-soft); font-size: 0.92rem; }
+  footer p { font-size: 0.92rem; }
+  .back-to-top { display: inline-block; margin-top: 24px; font-family: var(--sans); font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-soft); text-decoration: none; }
+  .back-to-top:hover { color: var(--accent); }
+
+  @media (max-width: 600px) {
+    header.hero { padding: 48px 0 28px; }
+    nav.toc { padding: 18px 18px 20px; }
+    .realms, .ledger { grid-template-columns: 1fr; }
+    .layer { grid-template-columns: 1fr; }
+    .layer .lname { padding: 12px 16px; }
+    .layer .lbody { padding: 14px 16px 4px; }
+    table.map, table.map thead, table.map tbody, table.map th, table.map td, table.map tr { display: block; }
+    table.map th { display: none; }
+    table.map { border: none; }
+    table.map tr { border: 1px solid var(--rule); margin-bottom: 14px; border-radius: 6px; overflow: hidden; }
+    table.map td { border: none; border-bottom: 1px solid var(--rule); width: auto; }
+    table.map td:last-child { border-bottom: none; }
+    table.map td::before { content: attr(data-label); display: block; font-family: var(--sans); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin-bottom: 4px; }
+    table.map td.ref::before { display: none; }
+  }
+</style>
+</head>
+<body id="top">
+
+<div class="wrap">
+  <header class="hero">
+    <p class="kicker">Emi Lokan &middot; Structural Theology</p>
+    <h1 class="title">Grace</h1>
+    <p class="subtitle">Redemption, Deception and the Renewal of the Mind</p>
+    <p class="byline">By Emi Lokan</p>
+  </header>
+  <div class="lede">
+    <p>This study sets out a doctrine of grace in two movements. The first is redemption: through the propitiation of Christ, those who turn to him are redeemed from the curse of the Torah at the instant of turning. The second is formation: the same grace trains them to renounce ungodliness and to live the life God intended. Redemption is complete when it is received. Working it out is a real and continuing choice.</p>
+    <p>The study then asks what goes wrong. A redeemed person can be deceived back toward the <span class="gk" lang="grc">νόμος</span>, and a distorted way of seeing can read circumstances as condemnation. Either can mimic the effects of a curse that no longer stands over them. It also marks the limits. Only the curses of Leviticus and Deuteronomy are in view, not every curse in Scripture, and not every affliction is a mimic. Its aim is that people walk out their redemption rather than live under a sentence already borne, and that grace is never mistaken for a licence.</p>
+  </div>
+  <blockquote class="epigraph">“For the grace of God that bringeth salvation hath appeared to all men, teaching us that, denying ungodliness and worldly lusts, we should live soberly, righteously, and godly, in this present world.”<cite>Titus 2:11–12</cite></blockquote>
+</div>
+
+<div class="wrap">
+<nav class="toc" aria-label="Contents">
+  <div>
+    <h2>Contents</h2>
+    <ol>
+      <li class="group">The Framework</li>
+      <li><a href="#layers"><span class="num">I.</span>The Thesis in Four Layers</a></li>
+      <li><a href="#verdict"><span class="num">II.</span>Grace as Verdict and as Trainer</a></li>
+      <li><a href="#curse"><span class="num">III.</span>What Was Redeemed: The Curse of the Torah</a></li>
+      <li class="group">The Counterfeit</li>
+      <li><a href="#bewitchment"><span class="num">IV.</span>Bewitchment and the Return to the Torah</a></li>
+      <li><a href="#perceived"><span class="num">V.</span>Perceived and Actual</a></li>
+      <li><a href="#sediment"><span class="num">VI.</span>Sedimentation</a></li>
+      <li class="group">The Balance</li>
+      <li><a href="#licence"><span class="num">VII.</span>Grace Is Not a Licence</a></li>
+      <li><a href="#love"><span class="num">VIII.</span>Love When Iniquity Abounds</a></li>
+      <li><a href="#conviction"><span class="num">IX.</span>Condemnation and Conviction</a></li>
+      <li class="group">Conclusion</li>
+      <li><a href="#principle"><span class="num">X.</span>The Governing Principle</a></li>
+    </ol>
+  </div>
+</nav>
+</div>
+
+<main>
+
+<!-- I -->
+<section id="layers">
+  <div class="wrap">
+    <span class="secnum">I</span>
+    <h2>The Thesis in Four Layers</h2>
+    <p class="tagline">Four claims that are easy to blur</p>
+    <div class="prose">
+      <p>The doctrine makes four distinct claims. Most confusion about grace comes from running them together, so they are set out first and developed one at a time.</p>
+    </div>
+    <div class="layers">
+      <div class="layer l1">
+        <div class="lname"><b>Juridical</b><span>Redeemed</span></div>
+        <div class="lbody">
+          <p>Christ has redeemed us from the curse of the Torah. At the moment a person turns to his propitiatory sacrifice, that curse has no standing over them.</p>
+          <p class="lrefs">Gal 3:13; Rom 3:24–25; Rom 8:1; Col 2:13–14</p>
+        </div>
+      </div>
+      <div class="layer l2">
+        <div class="lname"><b>Functional</b><span>Mimicked</span></div>
+        <div class="lbody">
+          <p>A redeemed person who goes back to the Torah as a way of standing right with God does not come under the curse again. The <span class="gk" lang="grc">νόμος</span> mimics the effects of the curse without its standing: the weight, the striving, the sense that it is never enough.</p>
+          <p class="lrefs">Gal 3:1–3; 4:9; 5:1</p>
+        </div>
+      </div>
+      <div class="layer l3">
+        <div class="lname"><b>Interpretive</b><span>Perceived</span></div>
+        <div class="lbody">
+          <p>A distorted mind can read circumstances as proof of condemnation. To a degree, the experience of being cursed is a distortion of perception, not a report of the facts.</p>
+          <p class="lrefs">Rom 12:2; 2 Cor 10:4–5; Heb 5:14; Deut 28:28, 34</p>
+        </div>
+      </div>
+      <div class="layer l4">
+        <div class="lname"><b>Scope</b><span>Limited</span></div>
+        <div class="lbody">
+          <p>Galatians 3:13 names the curse of the Torah, the covenant sanctions of Leviticus and Deuteronomy. It does not cancel every curse in Scripture, and not every affliction is a mimic.</p>
+          <p class="lrefs">Gal 3:13; Gen 3:17; Gal 1:8–9; Rev 22:18–19; John 9:3</p>
+        </div>
+      </div>
+    </div>
+    <div class="prose">
+      <p>The first layer answers the question of standing. The second answers the question of the Torah, the third the question of perception, and the fourth the question of scope.</p>
+    </div>
+  </div>
+</section>
+
+<!-- II -->
+<section id="verdict">
+  <div class="wrap">
+    <span class="secnum">II</span>
+    <h2>Grace as Verdict and as Trainer</h2>
+    <p class="tagline">Redemption received, redemption walked</p>
+    <p class="refs">Ephesians 2:8–10 / Titus 2:11–14 / Romans 3:24–25; 5–6</p>
+    <div class="prose">
+      <p>Grace does two things in the New Testament, and neither can be dropped. It delivers from the consequences of sin, and it enables the life God intended. Paul puts both in one breath: “by grace are ye saved through faith”, and yet “we are his workmanship, created in Christ Jesus unto good works, which God hath before ordained that we should walk in them” (Eph 2:8, 10).</p>
+    </div>
+    <div class="realms">
+      <div class="realm">
+        <h3>Grace as Verdict</h3>
+        <div class="greek">Redemption, complete at the turning</div>
+        <ul>
+          <li>“Justified freely by his grace through the redemption that is in Christ Jesus: whom God hath set forth to be a propitiation through faith in his blood” (Rom 3:24–25).</li>
+          <li>The record of what was owed is cancelled, “nailing it to his cross” (Col 2:14).</li>
+          <li>“There is therefore now no condemnation to them which are in Christ Jesus” (Rom 8:1).</li>
+        </ul>
+      </div>
+      <div class="realm trainer">
+        <h3>Grace as Trainer</h3>
+        <div class="greek">Formation, walked out daily</div>
+        <ul>
+          <li>Grace is “teaching us” to deny ungodliness and worldly lusts and to live soberly, righteously and godly (Titus 2:12).</li>
+          <li>Christ gave himself to “redeem us from all iniquity, and purify unto himself a peculiar people, zealous of good works” (Titus 2:14).</li>
+          <li>“Work out your own salvation … For it is God which worketh in you both to will and to do” (Phil 2:12–13).</li>
+        </ul>
+      </div>
+    </div>
+    <div class="word">
+      <span class="lbl">Word study</span>
+      <p><span class="gk" lang="grc">παιδεύουσα</span> (Titus 2:12), rendered “teaching” in the Authorised Version, is the verb for training a child: instruction, correction and discipline together. The same verb carries the Lord's chastening of his own in 1 Cor 11:32 and Heb 12:6. Grace is presented as an active instructor, not only as a pardon.</p>
+    </div>
+    <div class="prose">
+      <p>Romans 5–6 draws the line at the other end. Grace abounds over sin, but Paul will not let that become a reason to sin: “Shall we continue in sin, that grace may abound? God forbid” (Rom 6:1–2). Grace liberates from sin's dominion. It is the opposite of a licence to remain unchanged.</p>
+    </div>
+  </div>
+</section>
+
+<!-- III -->
+<section id="curse">
+  <div class="wrap">
+    <span class="secnum">III</span>
+    <h2>What Was Redeemed</h2>
+    <p class="tagline">The curse of the Torah, and no further</p>
+    <p class="refs">Galatians 3:10–14 / Deuteronomy 21:23; 27:26; 28 / Leviticus 26</p>
+    <div class="prose">
+      <p>“For as many as are of the works of the law are under the curse: for it is written, Cursed is every one that continueth not in all things which are written in the book of the law to do them” (Gal 3:10). Then: “Christ hath redeemed us from the curse of the law, being made a curse for us: for it is written, Cursed is every one that hangeth on a tree” (Gal 3:13).</p>
+      <p>The phrase is not loose. The word is <span class="gk" lang="grc">νόμος</span>, the Torah. Paul's two quotations are Deuteronomy 27:26 and 21:23, and the curse of the Torah is the set of covenant sanctions laid out in Leviticus 26 and Deuteronomy 28, which end in scattering among the nations (Lev 26:33; Deut 28:64). That is the curse Christ bore.</p>
+    </div>
+    <div class="word">
+      <span class="lbl">Word study</span>
+      <p><span class="gk" lang="grc">ἐξηγόρασεν</span> (Gal 3:13), “hath redeemed”, is the aorist of <span class="gk" lang="grc">ἐξαγοράζω</span>, to buy out. It names a completed act. Paul says in the present tense that those who rely on the works of the Torah <em>are</em> under the curse (3:10), and in the completed past that Christ <em>has</em> redeemed us from it. A redeemed person who returns to the Torah as a strategy of righteousness meets its pressure, not its standing. The curse itself has already been borne.</p>
+    </div>
+    <p class="ledger-title">The scope of Galatians 3:13</p>
+    <div class="ledger">
+      <div class="redeemed"><span class="lbl">Redeemed from</span>
+        <ul>
+          <li>The curse of the Torah: the covenant sanctions of Leviticus 26 and Deuteronomy 28 (Gal 3:10, 13).</li>
+        </ul>
+      </div>
+      <div class="notcovered"><span class="lbl">Outside what Gal 3:13 names</span>
+        <ul>
+          <li>Curses of the Fall and the pre-Torah narrative (Gen 3:17; 4:11).</li>
+          <li>Apostolic anathemas (Gal 1:8–9).</li>
+          <li>The words of Revelation (Rev 22:18–19).</li>
+        </ul>
+      </div>
+    </div>
+    <div class="prose">
+      <p>Galatians 3:13 redeems from the curse of the Torah. It does not say that every curse is redeemed, and this study does not claim it. Those other categories must not be collapsed into one, or assumed to operate identically. How each one stands in relation to the cross is a separate question, and each needs its own examination.</p>
+    </div>
+  </div>
+</section>
+
+<!-- IV -->
+<section id="bewitchment">
+  <div class="wrap">
+    <span class="secnum">IV</span>
+    <h2>Bewitchment and the Return to the Torah</h2>
+    <p class="tagline">The counterfeit that mimics the curse</p>
+    <p class="refs">Galatians 3:1–5; 4:8–11; 5:1–10; 6:1</p>
+    <div class="prose">
+      <p>“O foolish Galatians, who hath bewitched you, that ye should not obey the truth, before whose eyes Jesus Christ hath been evidently set forth, crucified among you?” (Gal 3:1). Notice what Paul does not say. He does not tell the Galatians they have been cursed. He asks who has bewitched them, and answers by pointing them back to Christ crucified before their eyes. The remedy for bewitchment is to see again.</p>
+    </div>
+    <div class="word">
+      <span class="lbl">Word study</span>
+      <p><span class="gk" lang="grc">βασκανία</span> is evil-eye language, and Paul's verb in Gal 3:1 is <span class="gk" lang="grc">ἐβάσκανεν</span>. The Septuagint uses the same root in Deut 28:54 (<span class="gk" lang="grc">βασκανεῖ</span>), in the chapter of the covenant curses, of the man who looks with an evil eye on his brother. Paul does not say he has that verse in view. The shared vocabulary is worth noting.</p>
+    </div>
+    <div class="prose">
+      <p>The bewitchment curses no one by itself. It deceives. It persuades the redeemed to go back under the <span class="gk" lang="grc">νόμος</span> as a way of standing right with God, and Paul describes the result as bondage: “how turn ye again to the weak and beggarly elements, whereunto ye desire again to be in bondage?” (Gal 4:9). The elements are weak and beggarly. They have no real power over the redeemed. They act as masters because someone submits to them (Rom 6:16). A freed servant who keeps working his old master's fields feels the same weight as before, but the master has no claim on him.</p>
+      <p>This is the sense in which the <span class="gk" lang="grc">νόμος</span> mimics a curse. It brings the weight, the striving and the fear, without the curse's standing. Paul's closing instruction is “Stand fast therefore in the liberty wherewith Christ hath made us free, and be not entangled again with the yoke of bondage” (Gal 5:1).</p>
+    </div>
+    <p class="note"><strong>Note.</strong> The verb is chosen with care. The claim is not that the curse operates again, which would say that the redemption had been reversed. It is that the effects are <em>mimicked</em>: they look and feel the same without the same source or standing.</p>
+    <div class="prose">
+      <p>Paul also places the blame precisely. “He that troubleth you shall bear his judgment, whosoever he be” (Gal 5:10). The troublers answer for what they do. The deceived are to be restored: “restore such an one in the spirit of meekness” (Gal 6:1).</p>
+      <a class="crosslink" href="reigning-well.html#limits">See also: Reigning Well, XII, The Limits of the Reformer →</a>
+    </div>
+  </div>
+</section>
+
+<!-- V -->
+<section id="perceived">
+  <div class="wrap">
+    <span class="secnum">V</span>
+    <h2>Perceived and Actual</h2>
+    <p class="tagline">The reality of an event, and the interpretation laid over it</p>
+    <p class="refs">Deuteronomy 28 / Romans 12:2 / 2 Corinthians 10:4–5 / Hebrews 5:14 / John 9:1–3</p>
+    <div class="prose">
+      <p>Redemption does not depend on whether the redeemed person perceives it. It is a matter of what Christ has done, whatever a believer's experience on a given day. That makes room for a distinction between the reality of an event and the interpretation laid over it. A distorted mind can read circumstances, relationships and even the self as evidence of condemnation, abandonment or divine displeasure where the facts do not warrant it.</p>
+      <p>To a degree, then, the experience is a distortion of the senses, as when a person who is hallucinating or deluded perceives what is not there. The curses of Deuteronomy describe that very signature: “The LORD shall smite thee with madness, and blindness, and astonishment of heart” (28:28); “So that thou shalt be mad for the sight of thine eyes which thou shalt see” (28:34); “a trembling heart, and failing of eyes, and sorrow of mind … and thou shalt fear day and night” (28:65–66). If the <span class="gk" lang="grc">νόμος</span> mimics the effects of the curse, distorted perception belongs among the effects mimicked.</p>
+    </div>
+    <h3>Not every affliction is perceived</h3>
+    <div class="prose">
+      <p>The distinction cuts both ways. Some afflictions are authentic. Three kinds should be kept apart.</p>
+    </div>
+    <div class="kinds">
+      <div class="kind k1">
+        <h3>Perceived</h3>
+        <span class="lbl">The mimicked curse</span>
+        <p>A felt condemnation that the facts do not warrant. Answered by the renewing of the mind and by seeing Christ crucified again.</p>
+        <p class="krefs">Rom 12:2; Gal 3:1</p>
+      </div>
+      <div class="kind k2">
+        <h3>Actual judgement</h3>
+        <span class="lbl">Real, and from God</span>
+        <p>Chastening for those who are the Lord's, so that they are not condemned with the world; and pronouncements against those who oppose or corrupt the gospel.</p>
+        <p class="krefs">1 Cor 11:30–32; Heb 12:5–11; Gal 1:8–9</p>
+      </div>
+      <div class="kind k3">
+        <h3>Suffering that glorifies</h3>
+        <span class="lbl">Neither mimic nor judgement</span>
+        <p>Affliction borne so that God may be glorified, in which his strength is made perfect in weakness.</p>
+        <p class="krefs">John 9:3; 11:4; 2 Cor 12:9; 1 Pet 4:12–16</p>
+      </div>
+    </div>
+    <div class="prose">
+      <p>Job's friends and the disciples in John 9:2 (“Master, who did sin, this man, or his parents, that he was born blind?”) read suffering through the Deuteronomic grid: sin, then affliction. In both cases the text corrects them: “Neither hath this man sinned, nor his parents: but that the works of God should be made manifest in him” (John 9:3). The wrong lens produces confident misdiagnosis.</p>
+      <p>The text gives a faculty and a measure for telling these apart, not a formula. The faculty is a renewed mind, “that ye may prove what is that good, and acceptable, and perfect, will of God” (Rom 12:2), and senses trained by use “to discern both good and evil” (Heb 5:14). The measure is conformity to the image of the Son, taken up in section X.</p>
+    </div>
+    <div class="word">
+      <span class="lbl">Word study</span>
+      <p><span class="gk" lang="grc">αἰσθητήρια</span> (Heb 5:14) are the faculties of perception, the “senses”, and they are <span class="gk" lang="grc">γεγυμνασμένα</span>, trained by exercise. The counter to distorted senses is trained senses.</p>
+    </div>
+  </div>
+</section>
+
+<!-- VI -->
+<section id="sediment">
+  <div class="wrap">
+    <span class="secnum">VI</span>
+    <h2>Sedimentation</h2>
+    <p class="tagline">How the interpretive faculty hardens</p>
+    <p class="refs">2 Corinthians 10:4–5 / Hebrews 3:12–14 / Ephesians 4:27 / Romans 12:2</p>
+    <div class="prose">
+      <p>Redemption does not depend on perception, but perception is shaped by what a person rehearses. The word is <span class="gk" lang="grc">λογισμοί</span>, rendered “imaginations” in the Authorised Version: reasonings, the settled arguments a person carries on with themselves. They accumulate. The less redemption is walked out, the more such patterns settle, and the more prone a person becomes to capitulate to the deception of section IV. The doctrine holds that redemption cannot per se be forfeited. It also holds that neglect has a mechanism, and the mechanism is sedimentation.</p>
+      <p>Scripture describes each stage. “Exhort one another daily, while it is called To day; lest any of you be hardened through the deceitfulness of sin” (Heb 3:13). “Neither give place to the devil” (Eph 4:27), where “place” is ground, held by degrees. And the counter-process: “the weapons of our warfare are … mighty through God to the pulling down of strong holds; casting down imaginations … and bringing into captivity every thought to the obedience of Christ” (2 Cor 10:4–5), together with “be ye transformed by the renewing of your mind” (Rom 12:2).</p>
+    </div>
+    <div class="word">
+      <span class="lbl">Word study</span>
+      <p><span class="gk" lang="grc">ἀνόητοι</span>, “foolish” in Gal 3:1 and 3:3, is literally “mindless”. Paul's diagnosis of the Galatians is a failure of the <span class="gk" lang="grc">νοῦς</span>, and not only of the will.</p>
+    </div>
+    <p class="note"><strong>Note.</strong> Scripture couples the finished work with continuing in the faith: “If ye continue in the faith grounded and settled” (Col 1:23); “if we hold the beginning of our confidence stedfast unto the end” (Heb 3:14). The doctrine holds both. Redemption is complete at the turning, and the walking-out is a real and continuing matter.</p>
+  </div>
+</section>
+
+<!-- VII -->
+<section id="licence">
+  <div class="wrap">
+    <span class="secnum">VII</span>
+    <h2>Grace Is Not a Licence</h2>
+    <p class="tagline">The balance</p>
+    <p class="refs">1 Corinthians 2:15; 10:1–12 / Genesis 18:25 / 1 Timothy 6:12</p>
+    <div class="prose">
+      <p>A doctrine that removes condemnation must say plainly what it does not remove. Four passages hold the line, and each is best read with a companion text. Jude names the alternative: those “turning the grace of our God into lasciviousness” (Jude 4).</p>
+    </div>
+    <table class="map">
+      <thead><tr><th>Scripture</th><th>What it says</th><th>Read with</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="ref">1 Cor 2:15</td>
+          <td data-label="What it says">“He that is spiritual judgeth all things, yet he himself is judged of no man.” The verb <span class="gk" lang="grc">ἀνακρίνω</span> means to examine or appraise. The spiritual person has the faculty of discernment (“we have the mind of Christ”, 2:16). No human can appraise him, because the Lord alone does.</td>
+          <td data-label="Read with">1 Cor 4:3–4, the same verb: “he that judgeth me is the Lord.” 1 Cor 11:31: “if we would judge ourselves, we should not be judged.”</td>
+        </tr>
+        <tr>
+          <td class="ref">Gen 18:25</td>
+          <td data-label="What it says">“Shall not the Judge of all the earth do right?” Abraham pleads for the righteous on the assumption that God judges, and judges justly. It is a pre-Torah witness: God was Judge before the Torah was given.</td>
+          <td data-label="Read with">1 Pet 1:17: the Father “who without respect of persons judgeth according to every man's work.” 2 Cor 5:10: every one appears before the judgment seat of Christ.</td>
+        </tr>
+        <tr>
+          <td class="ref">1 Tim 6:12</td>
+          <td data-label="What it says">“Fight the good fight of faith, lay hold on eternal life, whereunto thou art also called.” The fight is from the calling, not for it. It is the fight to go on standing in faith.</td>
+          <td data-label="Read with">Gal 5:1: “Stand fast therefore in the liberty.” 1 Cor 9:24–27: Paul keeps his body under, lest he become a castaway.</td>
+        </tr>
+        <tr>
+          <td class="ref">1 Cor 10:1–12</td>
+          <td data-label="What it says">Israel was redeemed from Egypt and fed by God, yet “with many of them God was not well pleased: for they were overthrown in the wilderness” (10:5). “Wherefore let him that thinketh he standeth take heed lest he fall” (10:12).</td>
+          <td data-label="Read with">Luke 17:32: “Remember Lot's wife.” Heb 10:31: “It is a fearful thing to fall into the hands of the living God.” Heb 12:14: holiness, “without which no man shall see the Lord.”</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="prose">
+      <p>These texts do not take back what grace has given. They stop it being misread. The verdict is settled, the Judge of all the earth is still the Judge, and the redeemed are still called to fight.</p>
+    </div>
+  </div>
+</section>
+
+<!-- VIII -->
+<section id="love">
+  <div class="wrap">
+    <span class="secnum">VIII</span>
+    <h2>Love When Iniquity Abounds</h2>
+    <p class="tagline">Righteousness is of faith</p>
+    <p class="refs">Matthew 24:12–13 / Romans 10:6 / Galatians 3:11; 5:6 / Titus 2:14 / Philippians 1:9–10</p>
+    <div class="prose">
+      <p>“And because iniquity shall abound, the love of many shall wax cold” (Matt 24:12). The word is <span class="gk" lang="grc">ἀνομία</span>, iniquity in the Authorised Version and, literally, the absence of the Torah (<span class="gk" lang="grc">νόμος</span>). The verb is passive: love is made cold by the climate. The question is how love is kept when iniquity abounds.</p>
+      <p>The answer in Galatians is that righteousness is not drawn from the surrounding order. “The just shall live by faith” (Gal 3:11), and Paul speaks of “the righteousness which is of faith” (Rom 10:6). Faith in turn “worketh by love” (Gal 5:6). If love is the output of faith, then an age of iniquity can chill it only by cutting off its source. Hence “he that shall endure unto the end, the same shall be saved” (Matt 24:13). The same ground is held in Titus 2:14, where Christ gave himself “that he might redeem us from all iniquity” (<span class="gk" lang="grc">ἀπὸ πάσης ἀνομίας</span>). Where the iniquity is found within, the verdict is the same (Rom 7:24–8:1).</p>
+      <p>Love that endures is not love that tolerates. Paul prays that love may “abound yet more and more in knowledge and in all judgment” (Phil 1:9), and love “rejoiceth not in iniquity, but rejoiceth in the truth” (1 Cor 13:6). Scripture keeps judgement and love together in the same people.</p>
+    </div>
+    <table class="map">
+      <thead><tr><th>Who</th><th>Judgement</th><th>Love</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="ref">Jesus</td>
+          <td data-label="Judgement">The woes on the scribes and Pharisees (Matt 23:13–33).</td>
+          <td data-label="Love">“O Jerusalem, Jerusalem … how often would I have gathered thy children together” (Matt 23:37).</td>
+        </tr>
+        <tr>
+          <td class="ref">Paul</td>
+          <td data-label="Judgement">“Let him be accursed” on those who preach another gospel (Gal 1:8–9).</td>
+          <td data-label="Love">“I have great heaviness and continual sorrow in my heart” for his kinsmen (Rom 9:1–3).</td>
+        </tr>
+        <tr>
+          <td class="ref">Abraham</td>
+          <td data-label="Judgement">Affirms that the Judge of all the earth will do right (Gen 18:25).</td>
+          <td data-label="Love">Pleads for Sodom, step by step, down to ten (Gen 18:23–32).</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- IX -->
+<section id="conviction">
+  <div class="wrap">
+    <span class="secnum">IX</span>
+    <h2>Condemnation and Conviction</h2>
+    <p class="tagline">Walking out redemption instead of living under a sentence</p>
+    <p class="refs">John 16:8 / 2 Corinthians 7:10 / Romans 8:33–34 / 1 John 3:19–20 / Revelation 12:10</p>
+    <div class="prose">
+      <p>The aim of the doctrine is practical. People who know they are redeemed can still live as if sentenced, replaying failures and serving a punishment that Christ has already borne. That is the <span class="gk" lang="grc">νόμος</span> turned inward: an attempt to pay a debt that Col 2:14 says has been nailed to the cross. It mimics the weight of a sentence that no longer stands.</p>
+    </div>
+    <table class="map">
+      <thead><tr><th></th><th class="th-conv">Conviction</th><th class="th-cond">Condemnation</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="ref">What it says</td>
+          <td data-label="Conviction">“This was wrong.” It names a specific act. The Spirit “will reprove the world of sin” (John 16:8).</td>
+          <td data-label="Condemnation">“You are the problem.” It is vague and total, the voice of “the accuser of our brethren” (Rev 12:10).</td>
+        </tr>
+        <tr>
+          <td class="ref">Where it points</td>
+          <td data-label="Conviction">To repentance, and forward: “godly sorrow worketh repentance to salvation not to be repented of” (2 Cor 7:10).</td>
+          <td data-label="Condemnation">Back at the self, and nowhere else: “the sorrow of the world worketh death” (2 Cor 7:10).</td>
+        </tr>
+        <tr>
+          <td class="ref">Where it ends</td>
+          <td data-label="Conviction">In restoration. Peter wept, and was restored (John 21:15–17).</td>
+          <td data-label="Condemnation">In despair. Judas felt remorse and did not return (Matt 27:3–5).</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="prose">
+      <p>Godly grief is real, and it is not the problem. It leads to repentance and then to movement. When the heart condemns, the answer is given in advance: “if our heart condemn us, God is greater than our heart, and knoweth all things” (1 John 3:20). “Who is he that condemneth? It is Christ that died” (Rom 8:34). Then, with Paul: “forgetting those things which are behind, and reaching forth unto those things which are before, I press toward the mark” (Phil 3:13–14).</p>
+    </div>
+  </div>
+</section>
+
+<!-- X -->
+<section id="principle">
+  <div class="wrap">
+    <span class="secnum">X</span>
+    <h2>The Governing Principle</h2>
+    <p class="tagline">Conformity to the image of the Son</p>
+    <p class="refs">Romans 8:29 / 2 Corinthians 3:18 / Philippians 3:12</p>
+    <div class="prose">
+      <p>The measure for everything above is not the consistency of a person's experience but conformity to the image of the Son (Rom 8:29). It names a direction, not an arrival: “we all … are changed into the same image from glory to glory” (2 Cor 3:18), a present and continuing transformation (<span class="gk" lang="grc">μεταμορφούμεθα</span>). Paul does not claim to have arrived: “Not as though I had already attained, either were already perfect: but I follow after” (Phil 3:12). The standard in Kings and Chronicles is the same. “Right in the sight of the LORD” is a whole heart, not sinlessness, and the best of the kings still left the high places standing.</p>
+      <p>The same measure applies to affliction, to relationships and to the self. The question is what a thing is doing to conformity to Christ. Pathology (<span class="gk" lang="grc">πάθος</span> and <span class="gk" lang="grc">λόγος</span>, the logic of suffering) must be recognised truthfully, but it does not become the final framework by which a person understands themselves or decides what is possible. It too is approached with the orientation of <span class="gk" lang="grc">μεταμόρφωσις</span>. That does not require denying suffering, calling evil good, or expecting every condition to resolve at once. It means that transformation remains the governing direction.</p>
+      <a class="crosslink" href="reigning-well.html#measure">See also: Reigning Well, II, The Measure →</a>
+      <p style="margin-top:1.3em">Grace establishes the foundation. Christ provides the objective reality of redemption. The Spirit enables transformation, and conformity to the Son supplies the reference point by which a believer learns to interpret and engage with reality.</p>
+    </div>
+    <blockquote>“For whom he did foreknow, he also did predestinate to be conformed to the image of his Son, that he might be the firstborn among many brethren.”<cite>Romans 8:29</cite></blockquote>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Scripture quotations are from the Authorised (King James) Version. Greek terms are taken from the Greek New Testament, and the reading of Deuteronomy 28:54 is from the Septuagint.</p>
+    <p><a href="reigning-well.html">Reigning Well</a></p>
+    <a class="back-to-top" href="#top">&uarr; Back to top</a>
+  </div>
+</footer>
+
+</body>
+</html>
